@@ -1,3 +1,70 @@
-img {
-  width: 100%;
+@font-face {
+  font-family: "Futura PT Regular";
+  src: url("../fonts/FuturaPT-Book.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Futura PT Heavy";
+  src: url("../fonts/FuturaPT-Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Futura PT Regular";
+  background-color: #05031a;
+  color: white;
+}
+
+.sectionMainBlock {
+}
+
+.wrapperMainBlock {
+  padding-left: 100px;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  // flex-flow: column wrap;
+  align-content: center;
+  flex-flow: wrap;
+  align-content: space-between;
+}
+
+.languageSwitcher a {
+  font-family: "Futura PT Regular";
+  font-size: 22px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.mainText p {
+  font-family: "Futura PT Heavy";
+  font-size: 58px;
+  line-height: 76px;
+}
+
+.bottomLink {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottomLink a {
+  padding-right: 60px;
+  font-family: "Futura PT Regular";
+  font-size: 22px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.strikethrough {
+  color: #a92b2b;
+  text-decoration: line-through;
+}
+
+.bluetext {
+  color: rgb(30, 178, 231);
 }
