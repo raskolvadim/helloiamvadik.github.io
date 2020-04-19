@@ -6,8 +6,9 @@ body {
   overflow-x: hidden; }
 
 .wrapperMainBlock {
-  padding-left: 100px;
+  padding-left: 60px;
   width: 90%;
+  max-width: 1600px;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,9 +31,9 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .mainText p {
-    font-family: "Futura PT Heavy";
+    font-family: "Futura PT Medium";
     font-size: 4em;
-    line-height: 1.2em; }
+    line-height: 1.3em; }
 
 .bottomLink {
   display: -webkit-box;
