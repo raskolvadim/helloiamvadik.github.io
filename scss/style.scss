@@ -1,63 +1,58 @@
-@font-face {
-  font-family: "Futura PT Regular";
-  src: url("../fonts/FuturaPT-Book.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Futura PT Heavy";
-  src: url("../fonts/FuturaPT-Heavy.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
+/*variable*/
+$colorAccidentWhite: #fff;
+$colorAccidentBlack: #05031a;
 
 body {
   font-family: "Futura PT Regular";
-  background-color: #05031a;
+  background-color: $colorAccidentBlack;
   color: white;
-}
-
-.sectionMainBlock {
+  overflow-x: hidden;
 }
 
 .wrapperMainBlock {
   padding-left: 100px;
-  padding-top: 58px;
-  padding-bottom: 58px;
+  // margin-top: 5%;
+  // margin-bottom: 5%;
   width: 90%;
   height: 100vh;
   display: flex;
-  // flex-flow: column wrap;
-  align-content: center;
   flex-flow: wrap;
-  align-content: space-between;
+  align-content: space-around;
 }
 
-.languageSwitcher a {
-  font-family: "Futura PT Regular";
-  font-size: 22px;
-  text-decoration: underline;
-  color: #fff;
+.languageSwitcher {
+  width: auto;
+  a {
+    font-family: "Futura PT Regular";
+    font-size: 22px;
+    text-decoration: underline;
+    color: $colorAccidentWhite;
+  }
 }
 
-.mainText p {
-  font-family: "Futura PT Heavy";
-  font-size: 58px;
-  line-height: 76px;
+.mainText {
+  width: auto;
+  flex-wrap: wrap;
+  p {
+    font-family: "Futura PT Heavy";
+    font-size: 4em;
+    line-height: 1.2em;
+  }
 }
 
 .bottomLink {
   display: flex;
   flex-direction: row;
+  width: auto;
 }
 
 .bottomLink a {
+  flex-wrap: wrap;
   padding-right: 60px;
   font-family: "Futura PT Regular";
   font-size: 22px;
   text-decoration: underline;
-  color: #fff;
+  color: $colorAccidentWhite;
 }
 
 .strikethrough {
@@ -67,4 +62,38 @@ body {
 
 .bluetext {
   color: rgb(30, 178, 231);
+}
+
+@media (max-width: 992px) {
+  .mainText p {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapperMainBlock {
+    padding-left: 30px;
+  }
+
+  .mainText p {
+    font-size: 2.8em;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapperMainBlock {
+    padding-left: 20px;
+  }
+
+  .mainText p {
+    font-size: 1.5em;
+    line-height: 1.3em;
+  }
+
+  .bottomLink {
+    flex-wrap: wrap;
+    a {
+      padding-bottom: 20px;
+    }
+  }
 }
