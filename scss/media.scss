@@ -1,0 +1,33 @@
+@media (max-width: 992px) {
+  .mainText p {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapperMainBlock {
+    padding-left: 30px;
+  }
+
+  .mainText p {
+    font-size: 2.8em;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapperMainBlock {
+    padding-left: 20px;
+  }
+
+  .mainText p {
+    font-size: 1.5em;
+    line-height: 1.3em;
+  }
+
+  .bottomLink {
+    flex-wrap: wrap;
+    a {
+      padding-bottom: 20px;
+    }
+  }
+}

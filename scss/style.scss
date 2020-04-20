@@ -9,10 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+/* global style */
+
 .wrapperMainBlock {
   padding-left: 60px;
-  // margin-top: 5%;
-  // margin-bottom: 5%;
   width: 90%;
   max-width: 1600px;
   height: 100vh;
@@ -63,38 +63,4 @@ body {
 
 .bluetext {
   color: rgb(30, 178, 231);
-}
-
-@media (max-width: 992px) {
-  .mainText p {
-    font-size: 3em;
-  }
-}
-
-@media (max-width: 576px) {
-  .wrapperMainBlock {
-    padding-left: 30px;
-  }
-
-  .mainText p {
-    font-size: 2.8em;
-  }
-}
-
-@media (max-width: 576px) {
-  .wrapperMainBlock {
-    padding-left: 20px;
-  }
-
-  .mainText p {
-    font-size: 1.5em;
-    line-height: 1.3em;
-  }
-
-  .bottomLink {
-    flex-wrap: wrap;
-    a {
-      padding-bottom: 20px;
-    }
-  }
 }
