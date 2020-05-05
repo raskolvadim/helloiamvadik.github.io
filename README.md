@@ -1,2 +1,1 @@
-# helloiamvadik.github.io
-My portfolio
+# vadiksafarov.site
