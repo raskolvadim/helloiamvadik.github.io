@@ -1,42 +1,34 @@
 /*variable*/
 body {
-  font-family: "Futura PT Regular";
-  background-color: #05031a;
-  color: white;
+  font-family: "Graphik Regular";
+  background-color: #fff;
+  color: #05031a;
   overflow-x: hidden; }
 
 /* global style */
 .wrapperMainBlock {
-  padding-left: 60px;
-  width: 90%;
-  max-width: 1600px;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
   flex-flow: wrap;
-  -ms-flex-line-pack: distribute;
-  align-content: space-around; }
-
-.languageSwitcher {
-  width: auto; }
-  .languageSwitcher a {
-    font-family: "Futura PT Regular";
-    font-size: 22px;
-    text-decoration: underline;
-    color: #fff; }
+  padding-left: 40px;
+  width: 90%;
+  max-width: 1600px;
+  height: 100vh; }
 
 .mainText {
   width: auto;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-top: 50px; }
   .mainText p {
-    font-family: "Futura PT Medium";
+    font-family: "Graphik Regular";
     font-size: 4em;
-    line-height: 1.3em; }
+    line-height: 1.1em; }
 
 .bottomLink {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,19 +36,25 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: auto; }
-
-.bottomLink a {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-right: 60px;
-  font-family: "Futura PT Regular";
-  font-size: 22px;
-  text-decoration: underline;
-  color: #fff; }
+  width: auto;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-bottom: 40px; }
+  .bottomLink a {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-right: 60px;
+    font-family: "Graphik Regular";
+    font-size: 22px;
+    text-decoration: underline;
+    color: #05031a; }
+  .bottomLink p {
+    font-family: "Graphik Regular";
+    font-size: 22px; }
 
 .strikethrough {
-  color: #a92b2b;
+  color: #f65154;
   text-decoration: line-through; }
 
 .bluetext {

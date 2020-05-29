@@ -4,30 +4,33 @@
   }
 }
 
-@media (max-width: 576px) {
-  .wrapperMainBlock {
-    padding-left: 30px;
-  }
-
-  .mainText p {
-    font-size: 2.8em;
-  }
-}
-
-@media (max-width: 576px) {
+@media (max-width: 477px) {
   .wrapperMainBlock {
     padding-left: 20px;
   }
 
   .mainText p {
-    font-size: 1.5em;
+    font-size: 1.8em;
     line-height: 1.3em;
+  }
+
+  .mainText {
+    padding-top: 30px;
   }
 
   .bottomLink {
     flex-wrap: wrap;
+    padding-bottom: 10px;
     a {
-      padding-bottom: 20px;
+      width: 100%;
+      padding-bottom: 10px;
     }
+  }
+}
+
+@media (max-width: 620px) {
+  .mainText p {
+    font-size: 1.7em;
+    line-height: 1.3em;
   }
 }

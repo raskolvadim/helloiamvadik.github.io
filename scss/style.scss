@@ -3,61 +3,57 @@ $colorAccidentWhite: #fff;
 $colorAccidentBlack: #05031a;
 
 body {
-  font-family: "Futura PT Regular";
-  background-color: $colorAccidentBlack;
-  color: white;
+  font-family: "Graphik Regular";
+  background-color: $colorAccidentWhite;
+  color: $colorAccidentBlack;
   overflow-x: hidden;
 }
 
 /* global style */
 
 .wrapperMainBlock {
-  padding-left: 60px;
+  display: flex;
+  flex-flow: wrap;
+  padding-left: 40px;
   width: 90%;
   max-width: 1600px;
   height: 100vh;
-  display: flex;
-  flex-flow: wrap;
-  align-content: space-around;
-}
-
-.languageSwitcher {
-  width: auto;
-  a {
-    font-family: "Futura PT Regular";
-    font-size: 22px;
-    text-decoration: underline;
-    color: $colorAccidentWhite;
-  }
 }
 
 .mainText {
   width: auto;
   flex-wrap: wrap;
+  padding-top: 50px;
   p {
-    font-family: "Futura PT Medium";
+    font-family: "Graphik Regular";
     font-size: 4em;
-    line-height: 1.3em;
+    line-height: 1.1em;
   }
 }
 
 .bottomLink {
+  width: 100%;
   display: flex;
   flex-direction: row;
   width: auto;
-}
-
-.bottomLink a {
-  flex-wrap: wrap;
-  padding-right: 60px;
-  font-family: "Futura PT Regular";
-  font-size: 22px;
-  text-decoration: underline;
-  color: $colorAccidentWhite;
+  align-items: flex-end;
+  padding-bottom: 40px;
+  a {
+    flex-wrap: wrap;
+    padding-right: 60px;
+    font-family: "Graphik Regular";
+    font-size: 22px;
+    text-decoration: underline;
+    color: $colorAccidentBlack;
+  }
+  p {
+    font-family: "Graphik Regular";
+    font-size: 22px;
+  }
 }
 
 .strikethrough {
-  color: #a92b2b;
+  color: #f65154;
   text-decoration: line-through;
 }
 
