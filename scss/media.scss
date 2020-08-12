@@ -1,3 +1,5 @@
+@import "style.scss";
+
 @media (max-width: 992px) {
   .mainText p {
     font-size: 3em;
@@ -7,15 +9,32 @@
 @media (max-width: 477px) {
   .wrapperMainBlock {
     padding-left: 20px;
+
   }
 
   .mainText p {
     font-size: 1.8em;
-    line-height: 1.3em;
+    line-height: 1.5em;
+    
   }
 
   .mainText {
     padding-top: 30px;
+  }
+
+  .email {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  .wrapper-portfolio-personal {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .wrapper-portfolio-commercial {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .bottomLink {
@@ -33,4 +52,29 @@
     font-size: 1.7em;
     line-height: 1.3em;
   }
+
+  .bottomLink a {
+    font-size: 18px;
+  }
+
+  .email__link {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .item-1, .item-2, .item-3, .item-4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .portfolio img {
+    min-height: 400px;
+  }
+
+  .email__link {
+    font-size: 48px;
+  }
+
 }

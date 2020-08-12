@@ -1,24 +1,235 @@
+@charset "UTF-8";
+/*variable*/
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: #fff;
+  color: #05031a;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+  font-weight: 400;
+}
+
+/* global style */
+.wrapperMainBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding-left: 40px;
+  width: 90%;
+  max-width: 1600px;
+  height: 100vh;
+}
+
+.mainText {
+  width: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.mainText p {
+  font-size: 4em;
+  line-height: 1.3em;
+}
+
+.bottomLink {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 40px;
+}
+
+.bottomLink a {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 60px;
+  font-size: 22px;
+  text-decoration: underline;
+  color: #05031a;
+}
+
+.bottomLink p {
+  font-size: 22px;
+}
+
+.strikethrough {
+  color: #f65154;
+  text-decoration: line-through;
+}
+
+.bluetext {
+  color: #1eb2e7;
+  white-space: nowrap;
+}
+
+/* портфолио */
+.wrapper-portfolio-personal {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.title {
+  font-size: 28px;
+  color: #05031a;
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+
+.portfolio {
+  margin-bottom: 80px;
+}
+
+.portfolio img {
+  width: 100%;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item-1 img {
+  -o-object-position: top;
+     object-position: top;
+}
+
+.portfolio__title {
+  padding-top: 28px;
+  font-size: 24px;
+  color: #05031a;
+}
+
+.wrapper-portfolio-commercial {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.email {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 80px;
+  margin-top: 120px;
+}
+
+.email__link {
+  font-size: 64px;
+  color: #05031a;
+}
+
+.portfolio a {
+  display: block;
+  position: relative;
+}
+
+.portfolio a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.portfolio a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.portfolio a:hover:before,
+a:hover:after {
+  opacity: 1;
+}
+
 @media (max-width: 992px) {
   .mainText p {
-    font-size: 3em; } }
+    font-size: 3em;
+  }
+}
 
 @media (max-width: 477px) {
   .wrapperMainBlock {
-    padding-left: 20px; }
+    padding-left: 20px;
+  }
   .mainText p {
     font-size: 1.8em;
-    line-height: 1.3em; }
+    line-height: 1.5em;
+  }
   .mainText {
-    padding-top: 30px; }
+    padding-top: 30px;
+  }
+  .email {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .wrapper-portfolio-personal {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .wrapper-portfolio-commercial {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .bottomLink {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-bottom: 10px; }
-    .bottomLink a {
-      width: 100%;
-      padding-bottom: 10px; } }
+        flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  .bottomLink a {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
 
 @media (max-width: 620px) {
   .mainText p {
     font-size: 1.7em;
-    line-height: 1.3em; } }
+    line-height: 1.3em;
+  }
+  .bottomLink a {
+    font-size: 18px;
+  }
+  .email__link {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .item-1, .item-2, .item-3, .item-4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .portfolio img {
+    min-height: 400px;
+  }
+  .email__link {
+    font-size: 48px;
+  }
+}
