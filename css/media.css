@@ -129,7 +129,7 @@ h1, h2, h3, p {
   margin-top: 120px;
 }
 
-.email__link {
+.email__link p {
   font-size: 64px;
   color: #05031a;
 }
@@ -211,6 +211,15 @@ a:hover:after {
   .mainText p {
     font-size: 1.7em;
     line-height: 1.3em;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .portfolio__title {
+    font-size: 18px;
+  }
+  .portfolio img {
+    max-height: 400px;
   }
   .bottomLink a {
     font-size: 18px;
