@@ -239,6 +239,19 @@ a:hover:after {
     min-height: 400px;
   }
   .email__link {
-    font-size: 48px;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1550px) {
+  .mainText p {
+    font-size: 6em;
+    line-height: 1.2em;
+  }
+  .portfolio img {
+    min-height: 750px;
+  }
+  .email__link p {
+    font-size: 2em;
   }
 }
