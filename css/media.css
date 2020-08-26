@@ -2,7 +2,7 @@
 /*variable*/
 body {
   font-family: 'Noto Sans TC', sans-serif;
-  background-color: #fff;
+  background-color: #ecebeb;
   color: #05031a;
   overflow-x: hidden;
 }
@@ -95,6 +95,7 @@ h1, h2, h3, p {
 }
 
 .portfolio img {
+  border-radius: 10px;
   width: 100%;
   height: 550px;
   -o-object-fit: cover;
@@ -115,7 +116,7 @@ h1, h2, h3, p {
 .wrapper-portfolio-commercial {
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 30px;
   margin-left: 40px;
   margin-right: 40px;
   -ms-grid-columns: 1fr 1fr;
@@ -150,10 +151,14 @@ h1, h2, h3, p {
   opacity: 0;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  border-radius: 10px;
 }
 
 .portfolio a:before {
   content: '';
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
@@ -245,7 +250,7 @@ a:hover:after {
 
 @media (min-width: 1550px) {
   .mainText p {
-    font-size: 6em;
+    font-size: 5em;
     line-height: 1.2em;
   }
   .portfolio img {

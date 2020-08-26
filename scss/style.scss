@@ -4,7 +4,7 @@ $colorAccidentBlack: #05031a;
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
-  background-color: $colorAccidentWhite;
+  background-color: #ececec;
   color: $colorAccidentBlack;
   overflow-x: hidden;
 }
@@ -90,6 +90,7 @@ h1, h2, h3, p {
 }
 
 .portfolio img {
+  border-radius: 10px;
   width: 100%;
   height: 550px;
   object-fit: cover;
@@ -109,7 +110,7 @@ h1, h2, h3, p {
 
 .wrapper-portfolio-commercial {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 30px;
   margin-left: 40px;
   margin-right: 40px;
   grid-template-columns: 1fr 1fr;
@@ -141,14 +142,18 @@ h1, h2, h3, p {
 
 .portfolio a:after { content: '';
   position: absolute;
+  box-sizing: border-box;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0,0,0,.1);
   opacity: 0;
   transition-duration: 0.3s;
+  border-radius: 10px;
 }
 
 .portfolio a:before {
   content: '';
+  border-radius: 10px;
+  box-sizing: border-box;
   position: absolute; 
   top: 0;
   left: 0;
